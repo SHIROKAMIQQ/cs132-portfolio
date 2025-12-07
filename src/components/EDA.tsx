@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { BarChart3, PieChart, TrendingUp, MapPin, GraduationCap, LineChart as LineChartIcon } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart as RePieChart, Pie, Cell } from 'recharts';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import nutshell from "../images/nutshell.png";
 
 export function EDA() {
   // Sample data for RQ1: Educational Attainment vs Unemployment
@@ -353,7 +354,7 @@ export function EDA() {
           <div className="backdrop-blur-xl bg-gradient-to-br from-yellow-500/5 to-red-500/5 border border-slate-800 hover:border-yellow-500/30 transition-all rounded-2xl p-8">
             {/* Add your image link below */}
             <ImageWithFallback 
-              src="src/images/nutshell.png" 
+              src={nutshell} 
               alt="Nutshell Plot" 
               className="w-full h-auto rounded-xl"
             />

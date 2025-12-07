@@ -1,5 +1,8 @@
 import { motion } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import espejo from "../images/espejo.jpeg"
+import felix from "../images/felix.jpg"
+import guiang from "../images/guiang.jpg"
 
 export function AboutUs() {
   const team = [
@@ -7,19 +10,19 @@ export function AboutUs() {
       name: "Ethan Kurt Espejo",
       bio: "A third-year UP Diliman BS Computer Science student with an interest in graphic and web design.",
       color: "red",
-      image: "src/images/espejo.jpeg"
+      image: espejo
     },
     {
       name: "Raphael Felix",
       bio: "A UP Diliman BS Computer Science student with interests in artificial intelligence and software development. Currently a member of UP Association of Computer Science Majors (UP CURSOR).",
       color: "blue",
-      image: "src/images/felix.jpg"
+      image: felix
     },
     {
       name: "Miguel Guiang",
       bio: "A UP Diliman BS Computer Science student with interests in backend web development. Currently a member of UP Center of Student Innovations and a Junior Engineering Aide of UP Diliman CRS. ",
       color: "yellow",
-      image: "src/images/guiang.jpg"
+      image: guiang
     }
   ];
 
