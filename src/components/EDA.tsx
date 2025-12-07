@@ -353,7 +353,7 @@ export function EDA() {
           <div className="backdrop-blur-xl bg-gradient-to-br from-yellow-500/5 to-red-500/5 border border-slate-800 hover:border-yellow-500/30 transition-all rounded-2xl p-8">
             {/* Add your image link below */}
             <ImageWithFallback 
-              src="/src/images/nutshell.png" 
+              src="src/images/nutshell.png" 
               alt="Nutshell Plot" 
               className="w-full h-auto rounded-xl"
             />
