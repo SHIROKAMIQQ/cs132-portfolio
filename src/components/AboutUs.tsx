@@ -7,19 +7,19 @@ export function AboutUs() {
       name: "Ethan Kurt Espejo",
       bio: "A third-year UP Diliman BS Computer Science student with an interest in graphic and web design.",
       color: "red",
-      image: "/src/images/espejo.jpeg"
+      image: "src/images/espejo.jpeg"
     },
     {
       name: "Raphael Felix",
       bio: "A UP Diliman BS Computer Science student with interests in artificial intelligence and software development. Currently a member of UP Association of Computer Science Majors (UP CURSOR).",
       color: "blue",
-      image: "/src/images/felix.jpg"
+      image: "src/images/felix.jpg"
     },
     {
       name: "Miguel Guiang",
       bio: "A UP Diliman BS Computer Science student with interests in backend web development. Currently a member of UP Center of Student Innovations and a Junior Engineering Aide of UP Diliman CRS. ",
       color: "yellow",
-      image: "/src/images/guiang.jpg"
+      image: "src/images/guiang.jpg"
     }
   ];
 
