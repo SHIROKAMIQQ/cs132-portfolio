@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>CS 132 WFU - Group 5</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
+
+    <!-- Navigation -->
+    <nav id="nav">
+        <ul class="container">
+            <li><a href="#top">Top</a></li>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#research">Research Questions</a></li>
+            <li><a href="#hypotheses">Hypotheses</a></li>
+            <li><a href="#testing">Hypothesis Testing</a></li>
+            <li><a href="#team">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Top / Project Title -->
+    <section id="top" class="wrapper style1">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-5-large col-12-medium">
+                    <span class="image fit">
+                        <img src="images/pic00.jpg" alt="Project Image" />
+                    </span>
+                </div>
+                <div class="col-8 col-7-large col-12-medium">
+                    <header>
+                        <h1>CS 132 WFU - Group 5</h1>
+                        <h2>
+                            Exploring the Relationship Between Educational Attainment and Unemployment Rates:
+                            A Regional Analysis of Industry-Specific Influences on Employment Outcomes
+                        </h2>
+                    </header>
+                    <p><strong>Note:</strong> This webpage is under development. The designs of the components are not yet final.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Introduction -->
+	<section id="introduction" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>Research Introduction</h2>
+			</header>
+			<div class="row aln-center">
+				<div class="col-12 col-12-medium">
+					<section class="box style1">
+						<p>
+							Underemployment and unemployment remain constant challenges in the Philippines, significantly affecting both economic growth and individual well-being. Apart from reducing total household income, job insecurity has been shown to affect physical and mental health and social stability, creating ripple effects across communities (Wang et al., 2024). Filipinos often migrate abroad to secure employment, effectively relocating to another country just to find work. According to Rodriguez, Ang, Cerruti, & Opiniano (2024), in their Case Study on Skills Development for Filipino Migrant Workers, almost 10 million Filipinos work overseas, driven by limited domestic opportunities, and over 40% of newly hired OFWs in 2023 secured low-skill jobs.
+						</p>
+						<p>
+							Another major problem the Philippines faces is in education, where shortages in resources and persistent poverty limit opportunities for students. Recent reporting underscores the severity of infrastructure deficits in basic education. The Department of Education has acknowledged that the 165,000-classroom backlog in this country may take 55 years to resolve under current construction rates (Untalan, 2025).
+						</p>
+						<p>
+							These two issues are closely related. Educational attainment is a key factor in influencing job prospects, with higher levels of education generally improving employment opportunities, especially since many jobs require certain degrees for eligibility. Additionally, studies have shown that education can directly mitigate unemployment. For example, Mayombe (2021) and Mian et al. (2022), highlight that vocational programs and e-education initiatives, respectively, have improved employment rates.
+						</p>
+						<p>
+							Unemployment rates and educational attainment also vary across different regions in the Philippines. While some regions specialize in particular industries and others receive differing levels of resources for education and workforce development, it remains unclear how these factors shape unemployment outcomes. This project therefore seeks to examine the relationship between educational attainment and unemployment rates, and whether regional unemployment rates are influenced by the types of industries that dominate each region.
+						</p>
+					</section>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Problem -->
+	<section id="problem" class="wrapper style2">
+		<div class="container">
+			<header>
+				<h2>Problem</h2>
+			</header>
+			<div class="row aln-center">
+				<div class="col-12 col-12-medium">
+					<section class="box style1">
+						<p>
+							Despite the recognized role of education in improving employment opportunities, unemployment remains a persistent problem in the Philippines, and the exact relationship between educational attainment and unemployment rates has not been clearly established.
+						</p>
+					</section>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Solution -->
+	<section id="solution" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>Solution</h2>
+			</header>
+			<div class="row aln-center">
+				<div class="col-12 col-12-medium">
+					<section class="box style1">
+						<p>
+							This project will investigate how levels of educational attainment relate to unemployment rates in the Philippines and whether industry composition plays a role, aiming to generate insights that can inform policies on education and employment.
+						</p>
+					</section>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Data Description -->
+	<section id="data" class="wrapper style2">
+		<div class="container">
+			<header>
+				<h2>Description of Data Set</h2>
+			</header>
+			<div class="row aln-center">
+				<div class="col-12 col-12-medium">
+					<section class="box style1">
+						<h3>PSA Labor Force Survey</h3>
+						<p>
+							Note that according to the latest PSA press release, data has been gathered up to July 2025. However, raw final datasets are only available online up to August 2024. Furthermore, datasets from April 2024 to August 2024 are missing some fields, such as Region and Major Industry Group, two very important fields needed to answer the research questions. The latest release with all necessary fields is from March 2024, hence that will be the one used for this study. All data fields of the Labor Force Survey take on numerical values. Also, data from Negros Island Region were collected as part of Western Visayas and Central Visayas.
+						</p>
+						<h4>Preprocessing:</h4>
+						<ul>
+							<li>From the Labor Force Survey dataset, 6 fields were taken: Region, C05 (Age), C07 (Highest Grade Completed), C11 (Location of Work), C15 (Major Industry Group), New Employment Criteria.</li>
+							<li>Entries with an empty employment status or "not part of the labor force" were ignored.</li>
+							<li>Employed and unemployed entries retained Region, Age, and Highest Grade Completed fields. Employed entries retained Location of Work and Major Industry Group. Unemployed entries had these set to 0.</li>
+							<li>Employment status was recoded: 1 for employed, 0 for unemployed.</li>
+							<li>Before preprocessing: 44,063 rows. After preprocessing: 20,518 rows.</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Research Questions (box-style, no icons/images) -->
+	<section id="research" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>Research Questions</h2>
+			</header>
+			<div class="row aln-center">
+				<div class="col-6 col-12-medium">
+					<section class="box style1">
+						<h3>Research Question 1</h3>
+						<p>
+							What is the relationship between the highest level of educational attainment
+							(no educational attainment, primary, secondary, college, doctorate) and unemployment rates,
+							and how does the degree of education influence the likelihood of being unemployed?
+						</p>
+					</section>
+				</div>
+				<div class="col-6 col-12-medium">
+					<section class="box style1">
+						<h3>Research Question 2</h3>
+						<p>
+							Do different regions have significantly different unemployment rates due to prevalence
+							of different industries per region?
+						</p>
+					</section>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Hypotheses (box-style, no icons/images) -->
+	<section id="hypotheses" class="wrapper style2">
+		<div class="container">
+			<header>
+				<h2>Hypotheses</h2>
+			</header>
+			<div class="row aln-center">
+				<div class="col-6 col-12-medium">
+					<section class="box style1">
+						<h3>Research Question 1</h3>
+						<p><strong>Null:</strong> Educational attainment has <b>no correlation</b> with unemployment rates.</p>
+						<p><strong>Alternative:</strong> Educational attainment <b>strongly correlates</b> with unemployment rates.</p>
+					</section>
+				</div>
+				<div class="col-6 col-12-medium">
+					<section class="box style1">
+						<h3>Research Question 2</h3>
+						<p><strong>Null:</strong> Different regions having different prevailing industries <b>does not significantly affect</b> differences in unemployment rates per region.</p>
+						<p><strong>Alternative:</strong> Different regions having different prevailing industries <b>significantly affect</b> differences in unemployment rates per region.</p>
+					</section>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Hypothesis Testing -->
+	<section id="testing" class="wrapper style3">
+		<div class="container">
+			<header>
+            <h2>Hypothesis Testing</h2>
+            <p style="font-size: 1rem; margin-top: 0.5em;">
+                Click this link for the computations: 
+                <a href="https://colab.research.google.com/drive/1nKhtWDnTyn7zCbody2H2oa_xKDppYMpF#scrollTo=bDkeDplVyBHC" target="_blank">https://colab.research.google.com/drive/1nKhtWDnTyn7zCbody2H2oa_xKDppYMpF#scrollTo=bDkeDplVyBHC</a>
+            </p>
+        </header>
+
+			<!-- RQ1 Testing -->
+			<div class="row aln-center" style="margin-bottom: 2em;">
+				<div class="col-12 col-12-medium">
+					<section class="box style1">
+						<h3>RQ1: Effect of Educational Attainment on Unemployment</h3>
+						<p>
+							The logistic regression model predicts unemployment status based on education level with
+							high accuracy (96.86%), indicating strong overall performance. The coefficient of 0.6169
+							for being unemployed suggests that the log-odds of unemployment increase with certain
+							education levels. Translating this into an odds ratio of 1.8531 means individuals in
+							these education categories are about 85% more likely to be unemployed compared to the
+							reference group (likely "No Education"), which surprisingly shows the lowest predicted
+							unemployment.
+						</p>
+						<p>
+							Based on the logistic regression analysis, educational attainment has a <b>statistically
+							significant</b> effect on unemployment. The p-values for all education levels are less than
+							the set alpha value 0.05, allowing us to <b>reject the null hypothesis</b> that education has
+							no correlation with unemployment. This supports the alternative hypothesis that
+							educational attainment strongly correlates with unemployment rates.
+						</p>
+						<!-- Placeholder for graph -->
+						<div style="text-align: center; margin-top: 1em;">
+                        	<img src="images/rq1.png" alt="Graph for RQ1" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+                   	 	</div>
+					</section>
+				</div>
+			</div>
+
+			<!-- RQ2 Testing -->
+			<div class="row aln-center">
+				<div class="col-12 col-12-medium">
+					<section class="box style1">
+						<h3>RQ2: Effect of Regional Industries on Unemployment</h3>
+						<p>
+							Based on the Chi-squared tests of independence, there is a <b>statistically significant</b> association among <b>Region, Industry, and Employment status</b>. The results show that the relationships between Region-Employment, Industry-Employment, and Region-Industry are all significant. Since the p-values for all tests are well below the alpha value of 0.05, we <b>reject the null hypothesis and accept the alternative hypothesis</b>.
+
+These results indicate that unemployment rates vary significantly across regions and that these variations are influenced by differences in industry composition within each region. Regions with different dominant industries show distinct unemployment patterns, suggesting that the prevalence of certain industries contributes to regional disparities in employment outcomes.
+
+						</p>
+						<div style="text-align: center; margin-top: 1em;">
+                        	<img src="images/rq2.png" alt="Graph for RQ1" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+                   		</div>
+					</section>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+    <!-- About Us / Team (box style like Topic/Keywords/Tools) -->
+    <section id="team" class="wrapper style3">
+        <div class="container">
+            <header>
+                <h2>About Us</h2>
+                <p>Our group aims to contribute to SDG 8: Decent Work and Economic Growth: Job Creation, Fair Wages, Economic Development
+</p>
+            </header>
+            <div class="row">
+                <div class="col-4 col-6-medium col-12-small">
+                    <section class="box style2">
+                        <a href="#" class="image featured"><img src="images/member1.jpg" alt="Member 1" /></a>
+                        <h3>Ethan Kurt Espejo</h3>
+                        <p>He is a 3rd Year BS Computer Science student.</p>
+                    </section>
+                </div>
+                <div class="col-4 col-6-medium col-12-small">
+                    <section class="box style2">
+                        <a href="#" class="image featured"><img src="images/member2.jpg" alt="Member 2" /></a>
+                        <h3>Raphael Felix</h3>
+                        <p>He is a 3rd Year BS Computer Science student.</p>
+                    </section>
+                </div>
+                <div class="col-4 col-6-medium col-12-small">
+                    <section class="box style2">
+                        <a href="#" class="image featured"><img src="images/member3.jpg" alt="Member 3" /></a>
+                        <h3>Miguel Guiang</h3>
+                        <p>He is a 3rd Year BS Computer Science student.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
